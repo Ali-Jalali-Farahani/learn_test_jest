@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "jest",
-    "test-file": "jest Components/UserInteraction/PostWithComments.test.tsx"
+    "test-file": "jest Components/Error/ShoppingList2.test.tsx"
   },
   "dependencies": {
     "next": "15.5.2",
