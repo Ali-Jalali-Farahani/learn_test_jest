@@ -1,11 +1,14 @@
-import UseArrayExample from "../Components/Hooks/UseArrayExample";
+import { PostWithComment } from "../Components/UserInteraction/PostWithComments";
 
 function Home() {
 
 
     return (
         <>
-            <UseArrayExample/>
+            <PostWithComment
+                content="The sky is blue"
+                user="Alex"
+            />
         </>
     )
 }

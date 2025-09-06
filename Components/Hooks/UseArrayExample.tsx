@@ -1,3 +1,4 @@
+"use client"
 import { useArray } from "./UseArray"
 
 export default function UseArrayExample() {
