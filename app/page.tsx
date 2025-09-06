@@ -1,28 +1,21 @@
-import { ShoppingList1 } from "Components/Error/ShoppingList1.tsx";
-import { ShoppingList2 } from "Components/Error/ShoppingList2.tsx";
+import { ShoppingList1 } from "@/Components/Error/ShoppingList1";
+import { ShoppingList2 } from "@/Components/Error/ShoppingList2";
 
-function App() {
+
+async function Home() {
 
     const ingredients = ['Apples', 'Bananas', 'Ham', 'Bread', 'Bread']
-
-    const someFunction = (selectedItem: string) => {
-        console.log(`Selected ${selectedItem}`)
-    }
 
     return (
         <>
             <h2>Shopping list 1:</h2>
-            {/* <ShoppingList1
-        groceries={ingredients}
-        selectItem={someFunction}
-      /> */}
+            {/*<ShoppingList1 groceries={ingredients}/>*/}
             <h2>Shopping list 2:</h2>
             <ShoppingList2
                 groceries={ingredients}
-                selectItem={someFunction}
             />
         </>
     )
 }
 
-export default App
+export default Home

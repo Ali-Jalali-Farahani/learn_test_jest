@@ -1,8 +1,9 @@
+"use client"
 import { useState } from 'react'
+import someFunction from "@/app/utility"
 
 export function ShoppingList2(props: {
     groceries: string[]
-    selectItem: Function
 }) {
     // Check for duplicates in groceries array
     const hasDuplicates = props.groceries.length !== new Set(props.groceries).size;
@@ -23,7 +24,7 @@ export function ShoppingList2(props: {
                 return prevItem
             })
         })
-        props.selectItem(item)
+        someFunction(item)
     }
 
     return (
